@@ -38,6 +38,7 @@ class Addcart extends CI_Controller {
         $this->cart->insert($data);
         
         $this->load->view('includes/products/cart');
+        redirect('products');
     }
     
     public function delete($rowid){
